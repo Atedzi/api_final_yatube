@@ -52,6 +52,20 @@ python manage.py runserver
 
 ```
 (GET) /api/v1/posts/ - Получить список всех публикаций
+В ответ должен получить список (если публикаций больше одной конечно же) такого вида:
+[
+    {
+        "id": "int",
+        "text": "string",
+        "pub_date": "DateTime",
+        "author": "string",
+        "image"": "string",
+        "group": "int"    
+    },
+    {
+        ...
+    },
+]
 ```
 
 ```
